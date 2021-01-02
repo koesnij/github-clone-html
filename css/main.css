@@ -1,3 +1,11 @@
-body {
+/** BEM 작명 규칙 
+ *  __ : ~의 일부분    (예- container__item)
+ *  -- : ~의 상태      (예- btn--success)
+ *   - : 일반적인 작명 (예- toggle-button)
+ */
+.body__container {
   font-family: "Roboto", "san-serif";
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
 }
