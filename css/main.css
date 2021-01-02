@@ -3,9 +3,42 @@
  *  -- : ~의 상태      (예- btn--success)
  *   - : 일반적인 작명 (예- toggle-button)
  */
+
+/* COMMON */
 .body__container {
   font-family: "Roboto", "san-serif";
   font-size: 16px;
   font-weight: 400;
   color: #333;
+}
+
+/* BUTTON COMPONENT */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  height: 34px;
+  background: #eee linear-gradient(to bottom, #fcfcfc, #eee);
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 0px 12px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.btn:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.08);
+}
+.btn.btn--primary {
+  color: white;
+  border: 1px solid #65b836;
+  background: #55a532 linear-gradient(#91dd70, #55ae2e);
 }
