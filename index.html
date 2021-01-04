@@ -50,12 +50,44 @@
   </head>
   <body>
     <div class="body__container">
-      <div class="btn">Hello</div>
-      <div class="btn btn--primary">Primary</div>
-      <div class="btn">Hey</div>
-      <div class="btn btn--primary">Submit</div>
-      <input type="text" class="input--text" />
-      <input type="text" class="input--text" placeholder="write here" />
+      <!-- HEADER -->
+      <header class="section">
+        <div class="inner">
+          <div class="menu-group">
+            <div class="logo">
+              <a href="#">GitHub</a>
+            </div>
+            <ul class="main-menu">
+              <li><a href="#">Personal</a></li>
+              <li><a href="#">Opensource</a></li>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Explore</a></li>
+            </ul>
+          </div>
+          <div class="sign-group">
+            <div class="btn-group">
+              <a class="btn" href="#">Sign in</a>
+              <a class="btn btn--primary sign-up" href="#">Sign up</a>
+            </div>
+            <!-- 서버로 제출할 데이터: 고유 id 지정 -->
+            <form id="search-form" action="">
+              <input
+                type="text"
+                id="search"
+                class="input--text"
+                placeholder="Search Github"
+              />
+              <input type="submit" value="Submit" />
+            </form>
+            <ul class="sub-menu">
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+            <ul class="sub-menu"></ul>
+          </div>
+        </div>
+      </header>
     </div>
   </body>
 </html>
