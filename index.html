@@ -91,15 +91,46 @@
       <section class="section section--visual">
         <div class="inner">
           <div class="summary">
-            <div class="summary__title">How people build software</div>
+            <!-- 자연스럽게 줄바꿈 --------- build-software 단어 연결  -->
+            <!-- 왜 <br> 안쓰고 &nbsp? 반응형에도 대응하기 위해서 -->
+            <div class="summary__title">How people build&nbsp;software</div>
 
             <div class="summary__description">
               Millions of developers use GitHub to build personal projects,
-              support their businesses, and work together on open source
+              support their businesses, and&nbsp;work together on open source
               technologies.
             </div>
           </div>
-          <form id="sign-form" method="POST" action=""></form>
+          <form id="sign-form" method="POST" action="">
+            <ul>
+              <li>
+                <input type="text" class="input--text" placeholder="username" />
+              </li>
+              <li>
+                <input type="email" class="input--text" placeholder="email" />
+              </li>
+              <li>
+                <input
+                  type="password"
+                  class="input--text"
+                  placeholder="password"
+                />
+                <p class="caption">
+                  Use at least one letter, one numeral, and seven characters.
+                </p>
+              </li>
+              <li>
+                <button type="submit" class="btn btn--primary">
+                  Sign up for GitHub
+                </button>
+                <p class="caption">
+                  By clicking "Sign up for GitHub", you agree to our terms of
+                  service and privacy policy. We'll occasionally send you
+                  account related emails.
+                </p>
+              </li>
+            </ul>
+          </form>
         </div>
       </section>
     </div>
