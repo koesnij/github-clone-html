@@ -195,6 +195,43 @@
           </div>
         </div>
       </section>
+      <!-- FEATURE end -->
+      <!-- WHERE IS -->
+      <section class="section section--where-is">
+        <div class="inner">
+          <div class="summary__title">Where is GitHub?</div>
+          <div class="summary__description">
+            GitHub is where people build software. More than 18 million people
+            use GitHub to discover, fork, and contribute to over 48 million
+            projects.
+          </div>
+          <div id="map"></div>
+        </div>
+      </section>
+      <!-- WHERE IS end -->
     </div>
+    <script>
+      function initMap() {
+        const myLatLng = {
+          lat: 37.78,
+          lng: -122.39,
+        };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          center: myLatLng,
+          scrollwheel: false,
+          zoom: 18,
+        });
+        const marker = new google.maps.Marker({
+          position: myLatLng,
+          title: "GitHub",
+          map,
+        });
+      }
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg&callback=initMap"
+      async
+      defer
+    ></script>
   </body>
 </html>
