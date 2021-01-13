@@ -430,3 +430,29 @@ footer .logo:hover svg {
   fill: #4078c0;
   transition: 0.2s;
 }
+
+/* MEDIA */
+@media (max-width: 1024px) {
+  header.section .inner {
+    max-width: none;
+    height: auto;
+    padding: 0 20px;
+  }
+  header .logo {
+    padding: 12px 0;
+  }
+  header .toggle {
+    display: none;
+    background-color: tomato;
+  }
+  #toggle-btn {
+    background: url("../img/toggle-btn.svg");
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    cursor: pointer;
+    text-indent: -9999px;
+  }
+}
