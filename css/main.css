@@ -179,7 +179,7 @@ header .btn-group {
   /* display: flex; */
 }
 header .btn-group .sign-in {
-  /* margin-right: 4px; */
+  margin-right: 4px;
 }
 #search-form {
   margin-right: 12px;
@@ -437,13 +437,55 @@ footer .logo:hover svg {
     max-width: none;
     height: auto;
     padding: 0 20px;
+    display: block;
   }
   header .logo {
     padding: 12px 0;
   }
+  header .menu-group {
+    display: block;
+  }
+  header .main-menu {
+    display: block;
+    margin-bottom: 10px;
+  }
+  header .main-menu li {
+    border-top: 1px solid #e5e5e5;
+  }
+  header .main-menu li a {
+    padding: 16px 0;
+  }
+  header .sign-group {
+    display: block;
+  }
+  header .btn-group {
+    display: block;
+  }
+  header .btn-group .btn {
+    display: flex;
+    justify-content: center;
+  }
+  header .btn-group .sign-in {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  #search-form {
+    margin-top: 10px;
+    margin-right: 0;
+  }
+  #search {
+    width: 100%;
+    text-align: center;
+  }
+  header .sub-menu {
+    margin: 12px;
+    justify-content: center;
+  }
   header .toggle {
     display: none;
-    background-color: tomato;
+  }
+  header .toggle.on {
+    display: block;
   }
   #toggle-btn {
     background: url("../img/toggle-btn.svg");
