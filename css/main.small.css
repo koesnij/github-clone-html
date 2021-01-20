@@ -1,3 +1,51 @@
-header {
-  background-color: red;
+/* COMMON */
+.summary__title {
+  /* section--visual 우선순위때문에 적용이 안되므로 !important 사용 */
+  font-size: 34px !important;
+}
+.summary__description {
+  font-size: 22px;
+}
+
+/* FEATURE */
+.section--feature .tiles ul {
+  grid-template-columns: repeat(1, 1fr);
+}
+.section--feature .tiles li {
+  border-right: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+.section--feature .tiles li img {
+  max-width: 350px;
+}
+
+/* WHERE IS */
+#map {
+  /* WHERE IS의 inner는 그대로인 상태에서 map의 크기만 늘어난다. */
+  /* INNER는 그대로 두고 마진만 조절한다. */
+
+  /* 초기화 전에는 100% : -20px이 이상하게 동작 */
+  /* 반드시 width를 auto로 초기화해줘야됨 */
+  width: auto;
+  margin: 40px -20px 0 -20px;
+}
+
+/* PRICING CARD */
+.section--pricing .card {
+  display: block;
+}
+.section--pricing .card .cell2 {
+  border-left: none;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* FOOTER */
+footer .site-links {
+  display: block;
+  float: none;
+  text-align: center;
+}
+
+footer .site-links li {
+  display: inline;
 }
